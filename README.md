@@ -13,8 +13,42 @@
 
 **Для просмотра журналов** в дистрибутивах Linux, использующих systemd, применяется команда journalctl. Если дистрибутив использует syslog, для просмотра используются: cat, less или grep. 
 
+
+
+
 * /var/log
 * /etc/logrotate.conf
-* /etc/rsyslog.d/50-default.conf 
+* /etc/rsyslog.d/50-default.conf
+
+**Команды**
+
+* sudo apt  install lnav
+* tail -f /var/log/syslog
+* sudo journalctl --list-boots
+* sudo journalctl -b -1
+* sudo journalctl -b -1 -u NetworkManager
+* sudo journalctl -p err -b -0
+* sudo journalctl -u NetworkManager
+* sudo journalctl -k
+
+* grep { warning | error | info }  /var/log/syslog
+
+* sudo journalctl -S today | grep ikozhuhar
+
+* sudo systemd-analyze
+* sudo systemd-analyze blame
+
+**Приоритеты сообщений**
+
+* emerg - наивысший приоритет
+* alert - тревога
+* crit - критическое событие
+* err - ошибка
+* warning - внимание
+* notice - уведомление
+* info - информационное сообщение
+* debug - отладочная информация
+
+
 
 
