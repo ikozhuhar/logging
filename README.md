@@ -13,8 +13,8 @@
 
 **Для просмотра журналов** в дистрибутивах Linux, использующих systemd, применяется команда journalctl. Если дистрибутив использует syslog, для просмотра используются: cat, less или grep. 
 
-/var/log
-/etc/logrotate.conf
-/etc/rsyslog.d/50-default.conf 
+* /var/log
+* /etc/logrotate.conf
+* /etc/rsyslog.d/50-default.conf 
 
 
